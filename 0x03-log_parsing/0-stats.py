@@ -40,9 +40,12 @@ def process_line(line):
     if match:
         status_code = int(match.group(3))
         file_size = int(match.group(4))
+
         total_file_size += file_size
+
         if status_code in status_code_counts:
             status_code_counts[status_code] += 1
+
         if line_count % 10 == 0:
             print_stats()
             line_count = 0
