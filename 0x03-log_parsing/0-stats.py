@@ -45,6 +45,7 @@ def process_line(line):
             status_code_counts[status_code] += 1
         if line_count % 10 == 0:
             print_stats()
+            line_count = 0
 
 
 def main():
