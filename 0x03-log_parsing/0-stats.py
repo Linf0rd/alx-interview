@@ -58,6 +58,8 @@ def main():
     for line in sys.stdin:
         process_line(line.strip())
 
+    print_stats()
+
 
 if __name__ == "__main__":
     main()
