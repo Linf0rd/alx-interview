@@ -50,6 +50,9 @@ def process_line(line):
             print_stats()
             line_count = 0
 
+if line_count % 10 != 0:
+    print_stats()
+
 
 def main():
     """Main function to handle input processing."""
